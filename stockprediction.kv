@@ -1,0 +1,37 @@
+#:kivy 1.11.0
+
+<MainWidget>:
+    id:main_widget
+    orientation: "vertical"
+    padding:"5dp", "5dp"
+    spacing:"30dp"
+    MDToolbar:
+        title: "Stock Prediction Prototype"
+    MDBoxLayout:
+        md_bg_color: app.theme_cls.primary_color
+        spacing:"30dp"
+        padding:"25dp", "5dp"
+        size_hint:1,None
+        height: dp(60)
+
+        MDLabel
+            text:"Stock Symbol: QQQ"
+    GraphLayout:
+        md_bg_color: app.theme_cls.accent_color
+        #padding:"5dp", "5dp"
+        id: box
+        #size_hint:1,None
+        #height: dp(360)
+
+
+
+
+
+
+<TextField@MDTextField>:
+    mode: "rectangle"
+    #md_bg_color: .1,.1,.1,.8
+    #color:.1,.1,.1,.8
+    color_mode: 'accent'
+    multiline: False
+    write_tab: False
